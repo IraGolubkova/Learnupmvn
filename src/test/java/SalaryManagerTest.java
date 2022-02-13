@@ -7,7 +7,7 @@ public class SalaryManagerTest {
     public void shouldCalculateForDayOff() {
         SalaryManager.isDayOff = true;
 
-        int expected = 4_000;
+        int expected = 3_000;
         int actual = SalaryManager.getDaySalary(40_000);
 
         Assertions.assertEquals(expected, actual);
