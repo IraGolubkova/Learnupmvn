@@ -1,5 +1,7 @@
 public class SpeedPlayersMethods {
-    public static boolean isGreenLight = false;
+    public static boolean IS_GREEN_LIGHT = false;
+    public static int MAX_SPEED = 0;
+
 
     public static int numberOfDropouts(int[] speedOfPlayer) {
         int countOfPlayers = 0;
@@ -13,10 +15,11 @@ public class SpeedPlayersMethods {
         }
         return countOfPlayers;
     }
+
     public static boolean isPlayerDroppedOut(int speedOfPlayer) {
-        //return isGreenLight == false && speedOfPlayer != 0;
-        if (isGreenLight == false) {
-            if (speedOfPlayer != 0) {
+
+        if (IS_GREEN_LIGHT == false) {
+            if (Math.abs(speedOfPlayer) > Math.abs(MAX_SPEED)) {
                 return true;
             } else {
                 return false;
@@ -67,8 +70,5 @@ public class SpeedPlayersMethods {
     }
 
 
-
 }
-
-
 
