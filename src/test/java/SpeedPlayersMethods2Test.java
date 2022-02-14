@@ -9,8 +9,8 @@ public class SpeedPlayersMethods2Test {
         SpeedPlayersMethods.MAX_SPEED = 2;
 
         int[] speedOfPlayer = {0, 3, 2};
-        int expected = 1;
 
+        int expected = 1;
         int actual = SpeedPlayersMethods.numberOfDropouts(speedOfPlayer);
 
         Assertions.assertEquals(expected, actual);
@@ -23,8 +23,8 @@ public class SpeedPlayersMethods2Test {
         SpeedPlayersMethods.MAX_SPEED = 2;
 
         int[] speedOfPlayer = {0, 3, 2};
-        int expected = 0;
 
+        int expected = 0;
         int actual = SpeedPlayersMethods.numberOfDropouts(speedOfPlayer);
 
         Assertions.assertEquals(expected, actual);
@@ -36,7 +36,7 @@ public class SpeedPlayersMethods2Test {
         SpeedPlayersMethods.IS_GREEN_LIGHT = false;
         SpeedPlayersMethods.MAX_SPEED = 2;
 
-        int[] speedOfPlayer = {0, -3, 2,};
+        int[] speedOfPlayer = {0, -3, 2};
 
         int expected = 1;
         int actual = SpeedPlayersMethods.numberOfDropouts(speedOfPlayer);
@@ -50,7 +50,7 @@ public class SpeedPlayersMethods2Test {
         SpeedPlayersMethods.IS_GREEN_LIGHT = true;
         SpeedPlayersMethods.MAX_SPEED = 2;
 
-        int[] speedOfPlayer = {0, -3, 2,};
+        int[] speedOfPlayer = {0, -3, 2};
 
         int expected = 0;
         int actual = SpeedPlayersMethods.numberOfDropouts(speedOfPlayer);
@@ -65,7 +65,7 @@ public class SpeedPlayersMethods2Test {
         SpeedPlayersMethods.IS_GREEN_LIGHT = false;
         SpeedPlayersMethods.MAX_SPEED = 2;
 
-        int[] speedOfPlayer = {0, 3, 2,};
+        int[] speedOfPlayer = {0, 3, 2};
 
         int[] expected = {3};
         int[] actual = SpeedPlayersMethods.speedsOfDropped(speedOfPlayer);
@@ -76,9 +76,10 @@ public class SpeedPlayersMethods2Test {
 
     @Test
     public void speedOfDropoutsWhenGreen() {
-        int[] speedOfPlayer = {0, 3, 2,};
         SpeedPlayersMethods.IS_GREEN_LIGHT = true;
         SpeedPlayersMethods.MAX_SPEED = 2;
+
+        int[] speedOfPlayer = {0, 3, 2};
 
         int[] expected = {};
         int[] actual = SpeedPlayersMethods.speedsOfDropped(speedOfPlayer);
@@ -102,9 +103,10 @@ public class SpeedPlayersMethods2Test {
 
     @Test
     public void speedOfDropoutsInGreenIsNegativeSpeed() {
-        int[] speedOfPlayer = {0, 3, -2,};
         SpeedPlayersMethods.IS_GREEN_LIGHT = true;
         SpeedPlayersMethods.MAX_SPEED = 2;
+
+        int[] speedOfPlayer = {0, 3, -2};
 
         int[] expected = {};
         int[] actual = SpeedPlayersMethods.speedsOfDropped(speedOfPlayer);
@@ -116,9 +118,10 @@ public class SpeedPlayersMethods2Test {
 
     @Test
     public void speedOfNonEliminatorsAtRed() {
-        int[] speedOfPlayer = {0, 3, 2,};
         SpeedPlayersMethods.IS_GREEN_LIGHT = false;
         SpeedPlayersMethods.MAX_SPEED = 2;
+
+        int[] speedOfPlayer = {0, 3, 2};
 
         int[] expected = {0, 2};
         int[] actual = SpeedPlayersMethods.speedsOfNotDropped(speedOfPlayer);
@@ -133,7 +136,7 @@ public class SpeedPlayersMethods2Test {
         SpeedPlayersMethods.IS_GREEN_LIGHT = true;
         SpeedPlayersMethods.MAX_SPEED = 2;
 
-        int[] speedOfPlayer = {0, 3, 2,};
+        int[] speedOfPlayer = {0, 3, 2};
 
         int[] expected = {0, 3, 2};
         int[] actual = SpeedPlayersMethods.speedsOfNotDropped(speedOfPlayer);
@@ -147,7 +150,7 @@ public class SpeedPlayersMethods2Test {
         SpeedPlayersMethods.IS_GREEN_LIGHT = false;
         SpeedPlayersMethods.MAX_SPEED = 2;
 
-        int[] speedOfPlayer = {0, 3, -2,};
+        int[] speedOfPlayer = {0, 3, -2};
 
         int[] expected = {0, -2};
         int[] actual = SpeedPlayersMethods.speedsOfNotDropped(speedOfPlayer);
@@ -158,9 +161,10 @@ public class SpeedPlayersMethods2Test {
 
     @Test
     public void speedOfNonDropoutsWithGreenColorAndNegativeSpeed() {
-        int[] speedOfPlayer = {0, 3, -2,};
         SpeedPlayersMethods.IS_GREEN_LIGHT = true;
         SpeedPlayersMethods.MAX_SPEED = 2;
+
+        int[] speedOfPlayer = {0, 3, -2};
 
         int[] expected = {0, 3, -2};
         int[] actual = SpeedPlayersMethods.speedsOfNotDropped(speedOfPlayer);
