@@ -1,4 +1,5 @@
-package 
+package Homework18;
+
 public class SpeedPlayersMethods {
     public static boolean IS_GREEN_LIGHT = false;
     public static int MAX_SPEED = 0;
