@@ -1,16 +1,17 @@
+package Homework18;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class SpeedPlayersMethods5Test {
+public class SpeedPlayersMethods2Test {
 
     @Test
     public void numberOfDropoutsWhenLightIsRed() {
         SpeedPlayersMethods.IS_GREEN_LIGHT = false;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        SpeedPlayersMethods.MAX_SPEED = 2;
 
         int[] speedOfPlayer = {0, 3, 2};
 
-        int expected = 0;
+        int expected = 1;
         int actual = SpeedPlayersMethods.numberOfDropouts(speedOfPlayer);
 
         Assertions.assertEquals(expected, actual);
@@ -20,7 +21,7 @@ public class SpeedPlayersMethods5Test {
     @Test
     public void numberOfDropoutsWhenLightIsGreen() {
         SpeedPlayersMethods.IS_GREEN_LIGHT = true;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        SpeedPlayersMethods.MAX_SPEED = 2;
 
         int[] speedOfPlayer = {0, 3, 2};
 
@@ -34,11 +35,11 @@ public class SpeedPlayersMethods5Test {
     @Test
     public void numberOfDropoutsWithGreenColorNegativeSpeed() {
         SpeedPlayersMethods.IS_GREEN_LIGHT = false;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        SpeedPlayersMethods.MAX_SPEED = 2;
 
         int[] speedOfPlayer = {0, -3, 2};
 
-        int expected = 0;
+        int expected = 1;
         int actual = SpeedPlayersMethods.numberOfDropouts(speedOfPlayer);
 
         Assertions.assertEquals(expected, actual);
@@ -48,7 +49,7 @@ public class SpeedPlayersMethods5Test {
     @Test
     public void numberOfDropoutsWhenColorIsRedNegativeSpeed() {
         SpeedPlayersMethods.IS_GREEN_LIGHT = true;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        SpeedPlayersMethods.MAX_SPEED = 2;
 
         int[] speedOfPlayer = {0, -3, 2};
 
@@ -63,11 +64,11 @@ public class SpeedPlayersMethods5Test {
     @Test
     public void speedOfDropoutsAtRed() {
         SpeedPlayersMethods.IS_GREEN_LIGHT = false;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        SpeedPlayersMethods.MAX_SPEED = 2;
 
         int[] speedOfPlayer = {0, 3, 2};
 
-        int[] expected = {};
+        int[] expected = {3};
         int[] actual = SpeedPlayersMethods.speedsOfDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
@@ -77,7 +78,7 @@ public class SpeedPlayersMethods5Test {
     @Test
     public void speedOfDropoutsWhenGreen() {
         SpeedPlayersMethods.IS_GREEN_LIGHT = true;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        SpeedPlayersMethods.MAX_SPEED = 2;
 
         int[] speedOfPlayer = {0, 3, 2};
 
@@ -90,12 +91,11 @@ public class SpeedPlayersMethods5Test {
 
     @Test
     public void speedOfDropoutsInRedIsNegativeSpeed() {
+        int[] speedOfPlayer = {0, 3, -2,};
         SpeedPlayersMethods.IS_GREEN_LIGHT = false;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        SpeedPlayersMethods.MAX_SPEED = 2;
 
-        int[] speedOfPlayer = {0, 3, -2};
-
-        int[] expected = {};
+        int[] expected = {3};
         int[] actual = SpeedPlayersMethods.speedsOfDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
@@ -105,7 +105,7 @@ public class SpeedPlayersMethods5Test {
     @Test
     public void speedOfDropoutsInGreenIsNegativeSpeed() {
         SpeedPlayersMethods.IS_GREEN_LIGHT = true;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        SpeedPlayersMethods.MAX_SPEED = 2;
 
         int[] speedOfPlayer = {0, 3, -2};
 
@@ -120,11 +120,11 @@ public class SpeedPlayersMethods5Test {
     @Test
     public void speedOfNonEliminatorsAtRed() {
         SpeedPlayersMethods.IS_GREEN_LIGHT = false;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        SpeedPlayersMethods.MAX_SPEED = 2;
 
         int[] speedOfPlayer = {0, 3, 2};
 
-        int[] expected = {0, 3, 2};
+        int[] expected = {0, 2};
         int[] actual = SpeedPlayersMethods.speedsOfNotDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
@@ -135,7 +135,7 @@ public class SpeedPlayersMethods5Test {
     @Test
     public void speedOfNonEliminatorsWhenGreen() {
         SpeedPlayersMethods.IS_GREEN_LIGHT = true;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        SpeedPlayersMethods.MAX_SPEED = 2;
 
         int[] speedOfPlayer = {0, 3, 2};
 
@@ -149,11 +149,11 @@ public class SpeedPlayersMethods5Test {
     @Test
     public void speedOfNonEliminatorsWithRedColorAndNegativeSpeed() {
         SpeedPlayersMethods.IS_GREEN_LIGHT = false;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        SpeedPlayersMethods.MAX_SPEED = 2;
 
         int[] speedOfPlayer = {0, 3, -2};
 
-        int[] expected = {0, 3, -2};
+        int[] expected = {0, -2};
         int[] actual = SpeedPlayersMethods.speedsOfNotDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
@@ -163,7 +163,7 @@ public class SpeedPlayersMethods5Test {
     @Test
     public void speedOfNonDropoutsWithGreenColorAndNegativeSpeed() {
         SpeedPlayersMethods.IS_GREEN_LIGHT = true;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        SpeedPlayersMethods.MAX_SPEED = 2;
 
         int[] speedOfPlayer = {0, 3, -2};
 

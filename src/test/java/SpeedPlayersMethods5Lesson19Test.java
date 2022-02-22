@@ -1,3 +1,4 @@
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -5,13 +6,13 @@ public class SpeedPlayersMethods5Lesson19Test {
 
     @Test
     public void numberOfDropoutsWhenLightIsRed() {
-        SpeedPlayersMethods.IS_GREEN_LIGHT = false;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        ArrayOfNamesOfSurvivingPlayers.IS_GREEN_LIGHT = false;
+        ArrayOfNamesOfSurvivingPlayers.MAX_SPEED = 5;
 
         int[] speedOfPlayer = {0, 3, 2};
 
         int expected = 0;
-        int actual = SpeedPlayersMethods.numberOfDropouts(speedOfPlayer);
+        int actual = ArrayOfNamesOfSurvivingPlayers.numberOfDropouts(speedOfPlayer);
 
         Assertions.assertEquals(expected, actual);
 
@@ -19,13 +20,13 @@ public class SpeedPlayersMethods5Lesson19Test {
 
     @Test
     public void numberOfDropoutsWhenLightIsGreen() {
-        SpeedPlayersMethods.IS_GREEN_LIGHT = true;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        ArrayOfNamesOfSurvivingPlayers.IS_GREEN_LIGHT = true;
+        ArrayOfNamesOfSurvivingPlayers.MAX_SPEED = 5;
 
         int[] speedOfPlayer = {0, 3, 2};
 
         int expected = 0;
-        int actual = SpeedPlayersMethods.numberOfDropouts(speedOfPlayer);
+        int actual = ArrayOfNamesOfSurvivingPlayers.numberOfDropouts(speedOfPlayer);
 
         Assertions.assertEquals(expected, actual);
 
@@ -33,13 +34,13 @@ public class SpeedPlayersMethods5Lesson19Test {
 
     @Test
     public void numberOfDropoutsWithGreenColorNegativeSpeed() {
-        SpeedPlayersMethods.IS_GREEN_LIGHT = false;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        ArrayOfNamesOfSurvivingPlayers.IS_GREEN_LIGHT = false;
+        ArrayOfNamesOfSurvivingPlayers.MAX_SPEED = 5;
 
         int[] speedOfPlayer = {0, -3, 2};
 
         int expected = 0;
-        int actual = SpeedPlayersMethods.numberOfDropouts(speedOfPlayer);
+        int actual = ArrayOfNamesOfSurvivingPlayers.numberOfDropouts(speedOfPlayer);
 
         Assertions.assertEquals(expected, actual);
 
@@ -47,13 +48,13 @@ public class SpeedPlayersMethods5Lesson19Test {
 
     @Test
     public void numberOfDropoutsWhenColorIsRedNegativeSpeed() {
-        SpeedPlayersMethods.IS_GREEN_LIGHT = true;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        ArrayOfNamesOfSurvivingPlayers.IS_GREEN_LIGHT = true;
+        ArrayOfNamesOfSurvivingPlayers.MAX_SPEED = 5;
 
         int[] speedOfPlayer = {0, -3, 2};
 
         int expected = 0;
-        int actual = SpeedPlayersMethods.numberOfDropouts(speedOfPlayer);
+        int actual = ArrayOfNamesOfSurvivingPlayers.numberOfDropouts(speedOfPlayer);
 
         Assertions.assertEquals(expected, actual);
 
@@ -62,13 +63,13 @@ public class SpeedPlayersMethods5Lesson19Test {
 
     @Test
     public void speedOfDropoutsAtRed() {
-        SpeedPlayersMethods.IS_GREEN_LIGHT = false;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        ArrayOfNamesOfSurvivingPlayers.IS_GREEN_LIGHT = false;
+        ArrayOfNamesOfSurvivingPlayers.MAX_SPEED = 5;
 
         int[] speedOfPlayer = {0, 3, 2};
 
         int[] expected = {};
-        int[] actual = SpeedPlayersMethods.speedsOfDropped(speedOfPlayer);
+        int[] actual = ArrayOfNamesOfSurvivingPlayers.speedsOfDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -76,13 +77,13 @@ public class SpeedPlayersMethods5Lesson19Test {
 
     @Test
     public void speedOfDropoutsWhenGreen() {
-        SpeedPlayersMethods.IS_GREEN_LIGHT = true;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        ArrayOfNamesOfSurvivingPlayers.IS_GREEN_LIGHT = true;
+        ArrayOfNamesOfSurvivingPlayers.MAX_SPEED = 5;
 
         int[] speedOfPlayer = {0, 3, 2};
 
         int[] expected = {};
-        int[] actual = SpeedPlayersMethods.speedsOfDropped(speedOfPlayer);
+        int[] actual = ArrayOfNamesOfSurvivingPlayers.speedsOfDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -90,13 +91,13 @@ public class SpeedPlayersMethods5Lesson19Test {
 
     @Test
     public void speedOfDropoutsInRedIsNegativeSpeed() {
-        SpeedPlayersMethods.IS_GREEN_LIGHT = false;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        ArrayOfNamesOfSurvivingPlayers.IS_GREEN_LIGHT = false;
+        ArrayOfNamesOfSurvivingPlayers.MAX_SPEED = 5;
 
         int[] speedOfPlayer = {0, 3, -2};
 
         int[] expected = {};
-        int[] actual = SpeedPlayersMethods.speedsOfDropped(speedOfPlayer);
+        int[] actual = ArrayOfNamesOfSurvivingPlayers.speedsOfDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -104,13 +105,13 @@ public class SpeedPlayersMethods5Lesson19Test {
 
     @Test
     public void speedOfDropoutsInGreenIsNegativeSpeed() {
-        SpeedPlayersMethods.IS_GREEN_LIGHT = true;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        ArrayOfNamesOfSurvivingPlayers.IS_GREEN_LIGHT = true;
+        ArrayOfNamesOfSurvivingPlayers.MAX_SPEED = 5;
 
         int[] speedOfPlayer = {0, 3, -2};
 
         int[] expected = {};
-        int[] actual = SpeedPlayersMethods.speedsOfDropped(speedOfPlayer);
+        int[] actual = ArrayOfNamesOfSurvivingPlayers.speedsOfDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -119,13 +120,13 @@ public class SpeedPlayersMethods5Lesson19Test {
 
     @Test
     public void speedOfNonEliminatorsAtRed() {
-        SpeedPlayersMethods.IS_GREEN_LIGHT = false;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        ArrayOfNamesOfSurvivingPlayers.IS_GREEN_LIGHT = false;
+        ArrayOfNamesOfSurvivingPlayers.MAX_SPEED = 5;
 
         int[] speedOfPlayer = {0, 3, 2};
 
         int[] expected = {0, 3, 2};
-        int[] actual = SpeedPlayersMethods.speedsOfNotDropped(speedOfPlayer);
+        int[] actual = ArrayOfNamesOfSurvivingPlayers.speedsOfNotDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -134,13 +135,13 @@ public class SpeedPlayersMethods5Lesson19Test {
 
     @Test
     public void speedOfNonEliminatorsWhenGreen() {
-        SpeedPlayersMethods.IS_GREEN_LIGHT = true;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        ArrayOfNamesOfSurvivingPlayers.IS_GREEN_LIGHT = true;
+        ArrayOfNamesOfSurvivingPlayers.MAX_SPEED = 5;
 
         int[] speedOfPlayer = {0, 3, 2};
 
         int[] expected = {0, 3, 2};
-        int[] actual = SpeedPlayersMethods.speedsOfNotDropped(speedOfPlayer);
+        int[] actual = ArrayOfNamesOfSurvivingPlayers.speedsOfNotDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -148,13 +149,13 @@ public class SpeedPlayersMethods5Lesson19Test {
 
     @Test
     public void speedOfNonEliminatorsWithRedColorAndNegativeSpeed() {
-        SpeedPlayersMethods.IS_GREEN_LIGHT = false;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        ArrayOfNamesOfSurvivingPlayers.IS_GREEN_LIGHT = false;
+        ArrayOfNamesOfSurvivingPlayers.MAX_SPEED = 5;
 
         int[] speedOfPlayer = {0, 3, -2};
 
         int[] expected = {0, 3, -2};
-        int[] actual = SpeedPlayersMethods.speedsOfNotDropped(speedOfPlayer);
+        int[] actual = ArrayOfNamesOfSurvivingPlayers.speedsOfNotDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -162,16 +163,20 @@ public class SpeedPlayersMethods5Lesson19Test {
 
     @Test
     public void speedOfNonDropoutsWithGreenColorAndNegativeSpeed() {
-        SpeedPlayersMethods.IS_GREEN_LIGHT = true;
-        SpeedPlayersMethods.MAX_SPEED = 5;
+        ArrayOfNamesOfSurvivingPlayers.IS_GREEN_LIGHT = true;
+        ArrayOfNamesOfSurvivingPlayers.MAX_SPEED = 5;
 
         int[] speedOfPlayer = {0, 3, -2};
 
         int[] expected = {0, 3, -2};
-        int[] actual = SpeedPlayersMethods.speedsOfNotDropped(speedOfPlayer);
+        int[] actual = ArrayOfNamesOfSurvivingPlayers.speedsOfNotDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
 
     }
+
+
+}
+
 
 }
