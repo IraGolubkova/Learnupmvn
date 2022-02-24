@@ -11,7 +11,7 @@ public class NamesOfSurvivingPlayersTest {
 
         String[] names = {"Elena 0", "Victor 3", "Maria 2",};
         String[] expected = {"Elena"};
-        String[] actual = ArrayOfNamesOfSurvivingPlayers.NamesOfSurvivors(names);
+        String[] actual = ArrayOfNamesOfSurvivingPlayers.namesOfSurvivors(names);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -25,7 +25,7 @@ public class NamesOfSurvivingPlayersTest {
 
         String[] names = {"Elena 0", "Victor 3", "Maria 2",};
         String[] expected = {};
-        String[] actual = ArrayOfNamesOfSurvivingPlayers.NamesOfSurvivors(names);
+        String[] actual = ArrayOfNamesOfSurvivingPlayers.namesOfSurvivors(names);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -39,7 +39,7 @@ public class NamesOfSurvivingPlayersTest {
 
         String[] names = {"Elena 0", "Victor -3", "Maria 2",};
         String[] expected = {"Elena"};
-        String[] actual = ArrayOfNamesOfSurvivingPlayers.NamesOfSurvivors(names);
+        String[] actual = ArrayOfNamesOfSurvivingPlayers.namesOfSurvivors(names);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -53,7 +53,7 @@ public class NamesOfSurvivingPlayersTest {
 
         String[] names = {"Elena 0", "Victor -3", "Maria 2",};
         String[] expected = {};
-        String[] actual = ArrayOfNamesOfSurvivingPlayers.NamesOfSurvivors(names);
+        String[] actual = ArrayOfNamesOfSurvivingPlayers.namesOfSurvivors(names);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -67,7 +67,7 @@ public class NamesOfSurvivingPlayersTest {
 
         String[] names = {"Elena 0", "Victor 3", "Maria 2",};
         String[] expected = {"Elena", "Maria"};
-        String[] actual = ArrayOfNamesOfSurvivingPlayers.NamesOfSurvivors(names);
+        String[] actual = ArrayOfNamesOfSurvivingPlayers.namesOfSurvivors(names);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -81,7 +81,7 @@ public class NamesOfSurvivingPlayersTest {
 
         String[] names = {"Elena 0", "Victor 3", "Maria 2",};
         String[] expected = {};
-        String[] actual = ArrayOfNamesOfSurvivingPlayers.NamesOfSurvivors(names);
+        String[] actual = ArrayOfNamesOfSurvivingPlayers.namesOfSurvivors(names);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -95,7 +95,7 @@ public class NamesOfSurvivingPlayersTest {
 
         String[] names = {"Elena 0", "Victor 3", "Maria 2",};
         String[] expected = {"Elena", "Victor", "Maria"};
-        String[] actual = ArrayOfNamesOfSurvivingPlayers.NamesOfSurvivors(names);
+        String[] actual = ArrayOfNamesOfSurvivingPlayers.namesOfSurvivors(names);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -109,7 +109,7 @@ public class NamesOfSurvivingPlayersTest {
 
         String[] names = {"Elena 0", "Victor 3", "Maria 2",};
         String[] expected = {};
-        String[] actual = ArrayOfNamesOfSurvivingPlayers.NamesOfSurvivors(names);
+        String[] actual = ArrayOfNamesOfSurvivingPlayers.namesOfSurvivors(names);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -123,7 +123,7 @@ public class NamesOfSurvivingPlayersTest {
 
         String[] names = {"Elena 0", "Victor -3", "Maria -2",};
         String[] expected = {"Elena"};
-        String[] actual = ArrayOfNamesOfSurvivingPlayers.NamesOfSurvivors(names);
+        String[] actual = ArrayOfNamesOfSurvivingPlayers.namesOfSurvivors(names);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -137,7 +137,7 @@ public class NamesOfSurvivingPlayersTest {
 
         String[] names = {"Elena 0", "Victor -3", "Maria -2",};
         String[] expected = {};
-        String[] actual = ArrayOfNamesOfSurvivingPlayers.NamesOfSurvivors(names);
+        String[] actual = ArrayOfNamesOfSurvivingPlayers.namesOfSurvivors(names);
 
         Assertions.assertArrayEquals(expected, actual);
 

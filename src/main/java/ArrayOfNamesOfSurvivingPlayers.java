@@ -3,7 +3,7 @@ public class ArrayOfNamesOfSurvivingPlayers {
     public static boolean IS_GREEN_LIGHT = false;
     public static int MAX_SPEED = 0;
 
-    public static String[] NamesOfSurvivors(String[] names) {
+    public static String[] namesOfSurvivors(String[] names) {
         int newArraySize = 0;
 
         for (String name : names) {
