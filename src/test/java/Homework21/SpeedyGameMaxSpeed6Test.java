@@ -10,7 +10,7 @@ public class SpeedyGameMaxSpeed6Test {
 
         boolean actual = speedyGame.isFailed(5);
 
-        Assertions.assertTrue(actual);
+        Assertions.assertFalse(actual);
 
 
     }
@@ -21,7 +21,7 @@ public class SpeedyGameMaxSpeed6Test {
 
         boolean actual = speedyGame.isFailed(5);
 
-        Assertions.assertTrue(actual);
+        Assertions.assertFalse(actual);
 
     }
 
@@ -31,7 +31,7 @@ public class SpeedyGameMaxSpeed6Test {
 
         boolean actual = speedyGame.isFailed(-5);
 
-        Assertions.assertTrue(actual);
+        Assertions.assertFalse(actual);
 
     }
 
@@ -41,7 +41,7 @@ public class SpeedyGameMaxSpeed6Test {
 
         boolean actual = speedyGame.isFailed(-5);
 
-        Assertions.assertTrue(actual);
+        Assertions.assertFalse(actual);
 
     }
 }
