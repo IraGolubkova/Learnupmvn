@@ -1,4 +1,5 @@
 package Homework21;
+
 public class Game {
 
     private boolean isGreenLight;

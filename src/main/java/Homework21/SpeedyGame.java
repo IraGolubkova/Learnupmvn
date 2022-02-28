@@ -1,4 +1,5 @@
 package Homework21;
+
 public class SpeedyGame extends Game {
     private int maxSpeed;
 
