@@ -1,4 +1,4 @@
-package Homework20;
+package homework20;
 
 public class NonStaticGameClassTask20 {
 
