@@ -10,11 +10,11 @@ public class GameManager {
         this.game = game;
     }
 
-    public int calculateNumberOfRounds(int[] speedPlayer) {
+    public int calculateNumberOfRounds(int[] speedOfPlayer) {
         int round = 0;
-        for (int i = 0; i != speedPlayer.length; ++i) {
+        for (int i = 0; i != speedOfPlayer.length; ++i) {
 
-            if (!game.isFailed(speedPlayer[i])) {
+            if (!game.isFailed(speedOfPlayer[i])) {
                 ++round;
             }
         }
