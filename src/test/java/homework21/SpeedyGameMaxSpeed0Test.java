@@ -7,7 +7,7 @@ public class SpeedyGameMaxSpeed0Test {
 
 
     @Test
-    public void CheckingGetterAndSetterMethods() {
+    public void checkingGetterAndSetterMethods() {
         SpeedyGame speedyGame = new SpeedyGame(true, 10);
 
         Assertions.assertTrue(speedyGame.isGreenLight());
