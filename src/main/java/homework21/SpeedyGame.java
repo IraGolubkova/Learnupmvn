@@ -23,5 +23,5 @@ public class SpeedyGame extends Game {
         return (!isGreenLight()) && (Math.abs(speed) > Math.abs(maxSpeed));
 
     }
-
 }
+
