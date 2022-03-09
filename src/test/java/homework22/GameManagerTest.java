@@ -15,11 +15,13 @@ public class GameManagerTest {
 
         int[] speedsOfPlayer = {0, 1, 2, 3, 0};
 
-        int expected = 2;
         int actual = gameManager.calculateNumberOfRounds(speedsOfPlayer);
+        int expected = 2;
+
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldCalculateNumberOfRoundsForGameWithoutMaxSpeedWhenLightIsGreen() {
         Game game = new Game(true);
@@ -43,11 +45,13 @@ public class GameManagerTest {
 
         int[] speedsOfPlayer = {0, 1, 2, 3, 0};
 
-        int expected = 4;
         int actual = gameManager.calculateNumberOfRounds(speedsOfPlayer);
+        int expected = 4;
+
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldCalculateNumberOfRoundsForGameWithMaxSpeedWhenLightIsGreen() {
         Game game = new SpeedyGame(true, 2);
