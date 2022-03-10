@@ -12,7 +12,7 @@ public class TestsForTheNonStaticGameMethods3Test {
         int[] speedOfPlayer = {0, 3, 2};
 
         int expected = 0;
-        int actual = NonStaticGameClassTask20.numberOfDropouts(speedOfPlayer);
+        int actual = nonStaticGameClassTask20.numberOfDropouts(speedOfPlayer);
 
         Assertions.assertEquals(expected, actual);
 
@@ -25,7 +25,7 @@ public class TestsForTheNonStaticGameMethods3Test {
         int[] speedOfPlayer = {0, 3, 2};
 
         int expected = 0;
-        int actual = NonStaticGameClassTask20.numberOfDropouts(speedOfPlayer);
+        int actual = nonStaticGameClassTask20.numberOfDropouts(speedOfPlayer);
 
         Assertions.assertEquals(expected, actual);
 
@@ -38,7 +38,7 @@ public class TestsForTheNonStaticGameMethods3Test {
         int[] speedOfPlayer = {0, -3, 2};
 
         int expected = 0;
-        int actual = NonStaticGameClassTask20.numberOfDropouts(speedOfPlayer);
+        int actual = nonStaticGameClassTask20.numberOfDropouts(speedOfPlayer);
 
         Assertions.assertEquals(expected, actual);
 
@@ -51,7 +51,7 @@ public class TestsForTheNonStaticGameMethods3Test {
         int[] speedOfPlayer = {0, -3, 2};
 
         int expected = 0;
-        int actual = NonStaticGameClassTask20.numberOfDropouts(speedOfPlayer);
+        int actual = nonStaticGameClassTask20.numberOfDropouts(speedOfPlayer);
 
         Assertions.assertEquals(expected, actual);
 
@@ -65,7 +65,7 @@ public class TestsForTheNonStaticGameMethods3Test {
         int[] speedOfPlayer = {0, 3, 2};
 
         int[] expected = {};
-        int[] actual = NonStaticGameClassTask20.speedsOfDropped(speedOfPlayer);
+        int[] actual = nonStaticGameClassTask20.speedsOfDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -78,7 +78,7 @@ public class TestsForTheNonStaticGameMethods3Test {
         int[] speedOfPlayer = {0, 3, 2};
 
         int[] expected = {};
-        int[] actual = NonStaticGameClassTask20.speedsOfDropped(speedOfPlayer);
+        int[] actual = nonStaticGameClassTask20.speedsOfDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -91,7 +91,7 @@ public class TestsForTheNonStaticGameMethods3Test {
         int[] speedOfPlayer = {0, 3, -2};
 
         int[] expected = {};
-        int[] actual = NonStaticGameClassTask20.speedsOfDropped(speedOfPlayer);
+        int[] actual = nonStaticGameClassTask20.speedsOfDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -104,7 +104,7 @@ public class TestsForTheNonStaticGameMethods3Test {
         int[] speedOfPlayer = {0, 3, -2};
 
         int[] expected = {};
-        int[] actual = NonStaticGameClassTask20.speedsOfDropped(speedOfPlayer);
+        int[] actual = nonStaticGameClassTask20.speedsOfDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -118,7 +118,7 @@ public class TestsForTheNonStaticGameMethods3Test {
         int[] speedOfPlayer = {0, 3, 2};
 
         int[] expected = {0, 3, 2};
-        int[] actual = NonStaticGameClassTask20.speedsOfNotDropped(speedOfPlayer);
+        int[] actual = nonStaticGameClassTask20.speedsOfNotDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -132,7 +132,7 @@ public class TestsForTheNonStaticGameMethods3Test {
         int[] speedOfPlayer = {0, 3, 2};
 
         int[] expected = {0, 3, 2};
-        int[] actual = NonStaticGameClassTask20.speedsOfNotDropped(speedOfPlayer);
+        int[] actual = nonStaticGameClassTask20.speedsOfNotDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -145,7 +145,7 @@ public class TestsForTheNonStaticGameMethods3Test {
         int[] speedOfPlayer = {0, 3, -2};
 
         int[] expected = {0, 3, -2};
-        int[] actual = NonStaticGameClassTask20.speedsOfNotDropped(speedOfPlayer);
+        int[] actual = nonStaticGameClassTask20.speedsOfNotDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -158,7 +158,7 @@ public class TestsForTheNonStaticGameMethods3Test {
         int[] speedOfPlayer = {0, 3, -2};
 
         int[] expected = {0, 3, -2};
-        int[] actual = NonStaticGameClassTask20.speedsOfNotDropped(speedOfPlayer);
+        int[] actual = nonStaticGameClassTask20.speedsOfNotDropped(speedOfPlayer);
 
         Assertions.assertArrayEquals(expected, actual);
 

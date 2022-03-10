@@ -11,7 +11,7 @@ public class TestsForTheNonStaticGameMethodTest {
 
         String[] names = {"Elena 0", "Victor 3", "Maria 2",};
         String[] expected = {"Elena"};
-        String[] actual = NonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
+        String[] actual = nonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -24,7 +24,7 @@ public class TestsForTheNonStaticGameMethodTest {
 
         String[] names = {"Elena 0", "Victor 3", "Maria 2",};
         String[] expected = {};
-        String[] actual = NonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
+        String[] actual = nonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
 
         Assertions.assertArrayEquals(expected, actual);
     }
@@ -35,7 +35,7 @@ public class TestsForTheNonStaticGameMethodTest {
 
         String[] names = {"Elena 0", "Victor -3", "Maria 2",};
         String[] expected = {"Elena"};
-        String[] actual = NonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
+        String[] actual = nonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -47,7 +47,7 @@ public class TestsForTheNonStaticGameMethodTest {
 
         String[] names = {"Elena 0", "Victor -3", "Maria 2",};
         String[] expected = {};
-        String[] actual = NonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
+        String[] actual = nonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -59,7 +59,7 @@ public class TestsForTheNonStaticGameMethodTest {
 
         String[] names = {"Elena 0", "Victor 3", "Maria 2",};
         String[] expected = {"Elena", "Maria"};
-        String[] actual = NonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
+        String[] actual = nonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -71,7 +71,7 @@ public class TestsForTheNonStaticGameMethodTest {
 
         String[] names = {"Elena 0", "Victor 3", "Maria 2",};
         String[] expected = {};
-        String[] actual = NonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
+        String[] actual = nonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -83,7 +83,7 @@ public class TestsForTheNonStaticGameMethodTest {
 
         String[] names = {"Elena 0", "Victor 3", "Maria 2",};
         String[] expected = {"Elena", "Victor", "Maria"};
-        String[] actual = NonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
+        String[] actual = nonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -95,7 +95,7 @@ public class TestsForTheNonStaticGameMethodTest {
 
         String[] names = {"Elena 0", "Victor 3", "Maria 2",};
         String[] expected = {};
-        String[] actual = NonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
+        String[] actual = nonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -107,7 +107,7 @@ public class TestsForTheNonStaticGameMethodTest {
 
         String[] names = {"Elena 0", "Victor -3", "Maria -2",};
         String[] expected = {"Elena"};
-        String[] actual = NonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
+        String[] actual = nonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -119,7 +119,7 @@ public class TestsForTheNonStaticGameMethodTest {
 
         String[] names = {"Elena 0", "Victor -3", "Maria -2",};
         String[] expected = {};
-        String[] actual = NonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
+        String[] actual = nonStaticGameClassTask20.namesOfSurvivorsNonStatic(names);
 
         Assertions.assertArrayEquals(expected, actual);
 
